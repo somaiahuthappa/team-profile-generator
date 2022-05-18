@@ -3,7 +3,7 @@
 const generateManager = manager => {
   return `
             <!-- Manager card -->
-        <div id="m-t" class="col-2">
+        <div id="m-t" class="col-12 col-md-2">
           <div class="card text-center">
             <div class="card-header">
               <h4><strong>${manager.name}</strong>
@@ -27,7 +27,7 @@ const generateEngineer = (engineers) => {
   let engineerCard = engineers.map(engineer => {
     return `
             <!-- Engineer card -->
-        <div id="m-t" class="col-2">
+        <div id="m-t" class="col-12 col-md-2">
           <div class="card text-center">
             <div class="card-header">
               <h4><strong>${engineer.name}</strong>
@@ -54,7 +54,7 @@ const generateIntern = (interns) => {
   let internCard = interns.map(intern => {
     return `
             <!-- Intern card -->
-        <div id="m-t" class="col-2">
+        <div id="m-t" class="col-12 col-md-2">
           <div class="card text-center">
             <div class="card-header">
               <h4><strong>${intern.name}</strong>
@@ -102,7 +102,7 @@ const generatePage = (manager, engineers, interns) => {
         </header>
     
         <main class = "container-fluid">
-        <div class = "row justify-content-around">
+        <div class = "row card-deck">
             ${generateManager(manager[0])}
             ${generateEngineer(engineers)}
             ${generateIntern(interns)}
