@@ -66,7 +66,7 @@ const generateIntern = (interns) => {
             <ul style= "list-style: none;" class="list-group list-group-flush">
               <li>Intern Id: <span>${intern.id}</span></li>
               <li>Intern email: <a href="mailto:${intern.email}">${intern.email}</a></li>
-              <li>Intern Number: <span>${intern.getSchool()}</span></li>
+              <li>School: <span>${intern.getSchool()}</span></li>
               </ul>
             </div>
           </div>
